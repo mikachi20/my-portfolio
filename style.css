@@ -13,7 +13,7 @@ a:hover {
 }
 
 header {
-  height: 60px;
+  height: 55px;
 }
 
 .header-nav {
@@ -32,13 +32,11 @@ nav {
   margin-right: 10%;
 }
 
-/*   First block   */
 #first-block {
   background-image: url("./images/itisme2.jpg");
   background-size: cover;
   width: 100%;
-  height: 550px;
-
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,19 +47,17 @@ nav {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 100px;
   font-family: serif;
   color: rgb(139, 113, 233);
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 60px;
   font-family: serif;
   color: rgb(236, 197, 197);
 }
-/*   First block End   */
 
-/*   Second block   */
 #second-block {
   background-color: #f0f0f0;
   text-align: center;
@@ -89,16 +85,13 @@ h2 {
   margin-bottom: 20px;
   background-color: cadetblue;
   color: #444;
-
   width: 30%;
 }
 
 .font-small {
   font-size: 15px;
 }
-/*   Second block End   */
 
-/*   Third block Start   */
 #third-block {
   background-color: #b4ee71;
   text-align: center;
@@ -129,5 +122,3 @@ h2 {
   color: #444;
   width: 30%;
 }
-
-/*   Third block End   */
