@@ -2,19 +2,79 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>My Portfolio</title>
+    <title>自己紹介サイト</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="hero">
-      <div id="background-words"></div>
-      <form id="myForm">
-        <input type="text" name="word" value="hello world!" />
-      </form>
-    </div>
+    <header class="header-nav">
+      <nav><a href="#first-block">Home</a></nav>
+      <nav><a href="#second-block">Quiz</a></nav>
+      <nav><a href="#third-block">LINE</a></nav>
+    </header>
+
+    <section id="first-block">
+      <div class="title-container">
+        <h1>三笠　友則</h1>
+        <h2>の自己紹介サイト</h2>
+        <a href="https://www.tus.ac.jp/">学校のサイト</a>
+      </div>
+    </section>
+
+    <section id="second-block">
+      <p class="info-title">Quiz</p>
+      <div class="about-container">
+        <p class="info-text">
+          <b>最近のマイブームは?</b>
+          <br />
+          <span class="font-small">
+            選択肢1　　　
+
+            <button id="button-one1">ドライブ</button>
+            <br />
+            選択肢2　　　　　
+
+            <button id="button-two1">禁煙</button>
+            <br />
+            選択肢3
+            <button id="button-three1">インテリアを買う</button>
+            <h4 id="answer1">答えは？</h4>
+          </span>
+        </p>
+
+        <p class="info-text">
+          <b>彼女いるの?</b>
+          <br />
+          <span class="font-small">
+            選択肢1 　　
+            <button id="button-one2">いない</button>
+            <br />
+            選択肢2
+            <button id="button-two2">いるわけない</button>
+            <br />
+            選択肢3　　　
+            <button id="button-three2">いる</button>
+            <h4 id="answer2">いるの？</h4>
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <section id="third-block">
+      <div class="info-title3">LINE</div>
+      <div class="about-container3">
+        <p class="line">
+          あなた
+          <input type="text" id="memo-input" />
+          <button id="add-button">送信</button>
+          <div id="memo-container"></div>
+        </p>
+
+        <p class="line">
+          三笠友則
+          <div id="reply-container"></div>
+        </p>
+      </div>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>

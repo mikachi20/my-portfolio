@@ -1,63 +1,133 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  text-transform: uppercase;
 }
 
-html {
-  font-size: 62.5%;
+a {
+  color: rgb(171, 171, 238);
+  text-decoration: none;
 }
 
-#hero {
-  background-color: #333;
-  position: relative;
+a:hover {
+  color: #f00;
+}
+
+header {
+  height: 60px;
+}
+
+.header-nav {
+  background-color: rgb(35, 126, 31);
+  position: fixed;
+  height: 60px;
   width: 100%;
-  max-width: 100%;
-  min-height: 100vh;
-  max-height: 100vh;
-}
 
-#background-words {
-  color: yellowgreen;
-  opacity: 0.4;
-  font-size: 1.6rem;
-  max-height: 100vh;
-  overflow: hidden;
-  width: 96%;
-  margin-left: auto;
-  padding-top: 1rem;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-#background-words div {
+nav {
+  margin-right: 10%;
+}
+
+/*   First block   */
+#first-block {
+  background-image: url("./images/itisme2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: serif;
+  color: rgb(139, 113, 233);
+}
+
+h2 {
+  font-size: 50px;
+  font-family: serif;
+  color: rgb(236, 197, 197);
+}
+/*   First block End   */
+
+/*   Second block   */
+#second-block {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
+  align-items: center;
 }
 
-#background-words div span {
-  width: fit-content;
-  height: fit-content;
+.info-title {
+  font-size: 60px;
+  font-family: serif;
+  margin-bottom: 20px;
+  color: rgb(88, 47, 47);
+  text-align: center;
 }
 
-input {
-  border: none;
-  box-shadow: none;
-  background-color: transparent;
-  font-size: 10rem;
-  font-family: fantasy;
-  letter-spacing: 5px;
-  color: yellowgreen;
-  position: absolute;
-  left: 50%;
-  width: 50%;
-  bottom: 30%;
+.info-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: cadetblue;
+  color: #444;
+
+  width: 30%;
 }
 
-input:focus {
-  outline: none;
+.font-small {
+  font-size: 15px;
 }
+/*   Second block End   */
+
+/*   Third block Start   */
+#third-block {
+  background-color: #b4ee71;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.about-container3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info-title3 {
+  font-size: 60px;
+  font-family: serif;
+  margin-bottom: 20px;
+  background-color: #f6f8f4;
+  color: rgb(135, 233, 105);
+  width: 30%;
+  text-align: center;
+}
+
+.line {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #444;
+  width: 30%;
+}
+
+/*   Third block End   */
