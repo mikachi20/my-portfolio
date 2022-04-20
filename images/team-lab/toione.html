@@ -10,8 +10,9 @@
     <h1>問題１</h1>
     <h1>問題３</h1>
     <h1>問題４</h1>
-    <h1></h1>
+    <h1>問題５</h1>
     <script>
+      // 問題１
       let One = () => {
         const line = 10000000;
         let sum = 0;
@@ -22,7 +23,7 @@
         }
         console.log(sum);
       };
-
+      // 問題３
       let Three = () => {
         let sum = 0;
         for (let i = 1; sum < 9; i++) {
@@ -32,7 +33,7 @@
           }
         }
       };
-
+      // 問題４
       let Four = () => {
         let sum = 0;
         for (let i = 1; sum < 50000; i++) {
@@ -47,11 +48,43 @@
         }
         console.log(sum);
       };
+      // 問題５
+      let Pro = (n) => {
+        let str = String(n);
+        let ans = 1;
+        for (let i = 0; i < str.length; i++) {
+          let j = Number(str[i]);
+          ans = ans * j;
+        }
+        return ans;
+      };
 
-      let Five = () => {};
+      let repNumber = (input) => {
+        let count = 0;
+        let i = input;
+        while (true) {
+          count += 1;
+          i = Pro(i);
+          if (i < 10) {
+            break;
+          }
+        }
+        return count;
+      };
+
+      let Five = () => {
+        let count = 0;
+        for (let i = 1; i <= 10000000; i++) {
+          if (repNumber(i) === 4) {
+            count++;
+          }
+        }
+        console.log(count);
+      };
       One();
       Three();
       Four();
+      Five();
     </script>
   </body>
 </html>
