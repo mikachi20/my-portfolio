@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>問題１</h1>
+    <h1>問題３</h1>
+    <h1>問題４</h1>
+    <h1></h1>
+    <script>
+      let One = () => {
+        const line = 10000000;
+        let sum = 0;
+        for (let i = 1; i <= line; i++) {
+          if (1234567890 % i === 0) {
+            sum += i;
+          }
+        }
+        console.log(sum);
+      };
+
+      let Three = () => {
+        let sum = 0;
+        for (let i = 1; sum < 9; i++) {
+          sum += 1 / i;
+          if (sum > 9) {
+            console.log(i);
+          }
+        }
+      };
+
+      let Four = () => {
+        let sum = 0;
+        for (let i = 1; sum < 50000; i++) {
+          if (i % 3 === 0) {
+            sum += i;
+            continue;
+          }
+          let str = String(i);
+          if (str.match(/3/)) {
+            sum += i;
+          }
+        }
+        console.log(sum);
+      };
+
+      let Five = () => {};
+      One();
+      Three();
+      Four();
+    </script>
+  </body>
+</html>
